@@ -1,0 +1,35 @@
+
+.departmentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-around;
+  align-content: space-between;
+  background: rgb(12,86,148);
+  background: linear-gradient(180deg, rgba(12,86,148,1) 0%, rgba(12,97,148,1) 33%, rgba(12,102,148,1) 47%, rgba(12,127,148,1) 100%);
+}
+.department {
+  width:32%;
+  color:rgb(235, 232, 232);
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  margin-right: auto;
+  -webkit-box-shadow: 2px 2px 3px -2px #FFFFFF; 
+  box-shadow: 2px 2px 3px -2px #FFFFFF;
+
+}
+.heading {
+  padding-bottom: 5px;
+  text-align: center;
+}
+.heading1 {
+  text-align: center;
+}
+
+.doctor{
+  text-align: center;
+  font-size-adjust: none;
+}

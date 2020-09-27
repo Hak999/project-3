@@ -1,0 +1,69 @@
+.MainWrapper {
+  display: flex;
+}
+.viewButton {
+  height: 50px;
+  width: 200px;
+}
+.sideBar {
+  background-color: #0c5694;
+  width: 20%;
+  min-height: 100vh;
+}
+h2,
+h6 {
+  text-align: center;
+}
+h3 {
+  color: #fff;
+}
+.wrapper {
+  padding-left: 20px;
+}
+.links {
+  color: #fff;
+  padding: 5px;
+}
+.dashboard {
+  width: 80%;
+}
+.Nav {
+  height: 60px;
+  background-color: #0c5694;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.div {
+  color: #fff;
+  cursor: pointer;
+}
+.dashBlock {
+  display: flex;
+  width: 30%;
+  background-color: rgb(126, 17, 17);
+  border-radius: 5px;
+  color: #fff;
+  padding: 40px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.dashBlock1 {
+  background-color: orange;
+}
+.dashBlock2 {
+  background-color: #0c5694;
+}
+.Icons {
+  height: 100px;
+  width: 100px !important;
+  padding: 10px;
+}
+.blocksWrapper {
+  display: flex;
+  margin-top: -30px;
+  justify-content: space-around;
+  align-items: center;
+}

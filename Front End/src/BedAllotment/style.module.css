@@ -1,0 +1,38 @@
+.input {
+  height: 45px;
+  border-radius: 5px;
+  outline: none;
+  width: 40%;
+  padding-left: 10px;
+  border: 1px solid #c3c3c3;
+  margin-bottom: 20px;
+}
+.textarea {
+  border-radius: 5px;
+  outline: none;
+
+  width: 40%;
+  padding-left: 10px;
+  border: 1px solid #c3c3c3;
+  margin-bottom: 20px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+  display: hidden;
+}
+.groupInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.submit {
+  margin-left: 45%;
+  width: 200px;
+  height: 50px;
+  background-color: #0c5694;
+  color: #ffff;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}

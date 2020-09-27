@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+  align-items: baseline;
+}
+.wrapper {
+  width: 80%;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(195, 195, 195, 1);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(195, 195, 195, 1);
+  box-shadow: 2px 2px 5px 0px rgba(195, 195, 195, 1);
+  border-radius: 2px;
+  margin-top: 50px;
+  margin-left: 10%;
+  padding-left: 5%;
+}
+.wrapper h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+.row p {
+  font-size: 1.5rem;
+  padding-left: 20px;
+}

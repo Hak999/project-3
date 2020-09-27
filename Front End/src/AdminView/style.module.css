@@ -1,0 +1,79 @@
+.MainWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.viewButton {
+  height: 50px;
+  width: 200px;
+}
+.title{
+  text-align: center;
+  padding-top: 50px;
+}
+.sideBar {
+  background-color: #0c5694;
+  color: #fff;
+  width: 20%;
+  min-height: 100vh;
+}
+h2,
+h6 {
+  text-align: center;
+}
+h3 {
+  color: #fff;
+}
+.wrapper {
+  padding-left: 20px;
+}
+.links {
+  color: #fff;
+  padding: 5px;
+}
+.dashboard {
+  width: 80%;
+}
+.Nav {
+  height: 60px;
+  background-color: #0c5694;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.div {
+  color: #fff;
+  cursor: pointer;
+}
+.dashBlock {
+  display: flex;
+  width:32%;
+  margin-bottom: 10px;
+  background-color: #0c5694;
+  border-radius: 5px;
+  color: #fff;
+  padding: 40px;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: auto;
+}
+.dashBlock1 {
+  background-color: #0c5694;
+}
+.dashBlock2 {
+  background-color: #0c5694;
+}
+.Icons {
+  height: 100px;
+  width: 100px !important;
+  padding: 10px;
+}
+.blocksWrapper {
+  display: flex;
+  margin-top:150px;
+  margin-left:50px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}

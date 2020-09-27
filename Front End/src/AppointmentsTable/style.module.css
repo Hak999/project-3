@@ -1,0 +1,45 @@
+.table {
+  border: 1px solid #0c5694;
+  width: 80%;
+  margin: auto;
+  padding-left: 10px;
+}
+.table thead {
+  background-color: #0c5694;
+  color: #ffffff;
+  height: 90px;
+  padding-left: 10px;
+}
+.table tr {
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid #c3c3c3;
+  padding-left: 10px;
+}
+.paddingLeft {
+  width: 20px;
+}
+.button {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #0c5694;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+.buttonAdd {
+  margin-left: 10%;
+  width: 180px;
+  margin-bottom: 20px;
+}
+.updateButton{
+    background-color: rgb(26, 102, 26);
+    width: 80px;
+    height: 30px;
+}
+.deleteButton{
+    background-color: red;
+    width: 80px;
+    height: 30px;
+}

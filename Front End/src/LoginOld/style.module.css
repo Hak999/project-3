@@ -1,0 +1,38 @@
+.SigninWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.signInBox{
+    width: 50%;
+    background-color: #3796e4;
+
+}
+.signInBox h2{
+    color: #ffff;
+padding: 30px;
+}
+
+.input input{
+    background-color: #ffff;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.button{
+    background-color: #ffff;
+    height: 40px;
+    width: 80px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 5%;
+    outline: none;
+    border-radius: 2px;
+}

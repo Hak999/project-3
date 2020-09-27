@@ -1,0 +1,41 @@
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .navbar {
+        background-color: #0c5694;
+    }
+
+    .background {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: var(--color-darkred);
+        background-image: url('./medic.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .navbar,
+    .nav-brand {
+        font-size: 2rem;
+    }
+
+    .sign-in {
+        background-color: rgb(12, 86, 148, 1);
+        border-radius: 10px 10px 10px 10px;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }

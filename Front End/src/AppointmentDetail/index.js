@@ -1,0 +1,96 @@
+import React, { useEffect, useState } from "react";
+import classes from "./style.module.css";
+import { Document, Page } from "react-pdf";
+import moment from "moment";
+import Home from "../HomeWrapper";
+import PatientAppWrapper from "../PatientAppointmentWrapper";
+import DoctorWrapper from "../DoctorWrapper";
+import PatientWrapper from "../PatientWrapper";
+const AppDetChild = () => {
+  const [app, setApp] = useState({});
+  useEffect(() => {
+    setApp(JSON.parse(localStorage.getItem("updateAppointment")));
+  }, []);
+  if (app === {}) {
+    return <h1>loading...</h1>;
+  }
+  return (
+    <div className={classes.wrapper}>
+      <h1>Appointment Detail</h1>
+      <div className={classes.row}>
+        <h4>Patient Name</h4>{" "}
+        <p>
+          {app.patient &&
+            `${app.patient[0].first_name} ${app.patient[0].last_name}`}
+        </p>
+      </div>
+      <div className={classes.row}>
+        <h4>Patient Phone</h4>{" "}
+        <p>{app.patient && app.patient[0].mobile_number}</p>
+      </div>
+      <div className={classes.row}>
+        <h4>Symptoms</h4> <p>{app.patient && app.patient[0].symptoms}</p>
+      </div>
+      <div className={classes.row}>
+        <h4>Doctor Name</h4>{" "}
+        <p>
+          {app.doctor &&
+            `${app.doctor[0].first_name} ${app.doctor[0].last_name}`}
+        </p>
+      </div>
+      <div className={classes.row}>
+        <h4>Doctor Phone</h4> <p>{app.doctor && app.doctor[0].mobile_number}</p>
+      </div>
+      <div className={classes.row}>
+        <h4>Date</h4> <p>{moment(app.date).format("ddd MMM DD YYYY")}</p>
+      </div>
+      <div className={classes.row}>
+        <h4>Time</h4> <p>{app.time}</p>
+      </div>
+      <div className={classes.row}>
+        <h4>Medication</h4> <p>{app.medication && app.medication}</p>
+      </div>
+      <div className={classes.row}>
+        <h4>Case</h4> <p>{app.docCase && app.docCase}</p>
+      </div>
+      <div className={classes.row}>
+        <h4>Test</h4>{" "}
+        <p>
+          {app.test ? (
+            <a
+              target="blank"
+              href={`${process.env.REACT_APP_IMAGE_URL}/${app.test}`}
+            >
+              Click to Downlaod
+            </a>
+          ) : null}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const RoomAllotment = (props) => {
+  if (localStorage.getItem("role") === "patient") {
+    return (
+      <PatientWrapper>
+        <AppDetChild props={props} />
+      </PatientWrapper>
+    );
+  } else if (localStorage.getItem("role") === "doctor") {
+    return (
+      <DoctorWrapper>
+        <br />
+        <AppDetChild props={props} />
+      </DoctorWrapper>
+    );
+  } else if (localStorage.getItem("role") === "admin") {
+    return (
+      <Home>
+        <br />
+        <AppDetChild props={props} />
+      </Home>
+    );
+  }
+};
+export default RoomAllotment;
